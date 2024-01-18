@@ -1,10 +1,10 @@
-import { setLocalStorage,getParams } from "./utils.mjs";
-import {ProductData} from "./ProductData.mjs";
-import {productDetails} from "./ProductDetails.mjs"
+import { getParam} from "./utils.mjs";
+import ProductData from "./ProductData.mjs";
+import productDet from "./ProductDetails.mjs";
 
 const dataSource = new ProductData("tents");
-const productId=getParams("product");
-const product= new productDetails(productId,dataSource);
+const productId=getParam("product");
+const product= new productDet(productId,dataSource);
 product.init();
 
 //function addProductToCart(product) {

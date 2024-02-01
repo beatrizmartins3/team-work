@@ -10,7 +10,7 @@
 
     <title>Sleep Outside | Checkout</title>
 
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
 
   </head>
 
@@ -77,7 +77,38 @@
         <h2>Review & Place your Order</h2>
 
       </section>
+      <form>
+        <label for="fname">First Name: *</label><br>
+        <input type="text" id="fname" name="fname" required><br>
+        <label for="lname">Last Name: *</label><br>
+        <input type="text" id="lname" name="lname" required><br><br>
+        <label for="streetA">Street Address: *</label><br>
+        <input type="text" id="streetA" name="streetA" required><br>
+        <label for="city">City: *</label><br>
+        <input type="text" id="city" name="city" required><br>
+        <label for="state">State: *</label><br>
+        <input type="text" id="state" name="state" required><br>
+        <label for="zipcode">Zip Code: *</label><br>
+        <input type="text" id="zipcode" name="zipcode" required><br><br>
+        <label for="creditcard">Credit Card Number: *</label><br>
+        <input type="text" id="creditcard" name="creditcard" required><br>
+        <label for="expiration">Expiration Date: *</label><br>
+        <input type="text" id="expiration" name="expiration" required><br>
+        <label for="securitycode">Security Code: *</label><br>
+        <input type="text" id="securitycode" name="securitycode" required><br><br>
+        <legend>Order Summary</legend><br>
+        <label for="subtotal">Subtotal: (<span id="numItems"></span>) </label>
+        <p id="subtotal"></p>
+        <label for="shipping">Shipping Estimate: </label>
+        <p id="shipping"></p>
+        <label for="tax">Tax: </label>
+        <p id="tax"></p>
+        <label for="order">Order Total: </label>
+        <p id="order"></p>
+        <input type="submit" id="submit" value="submit">
+        
 
+    </form>
     </main>
 
     <footer>&copy;NOT a real business</footer>

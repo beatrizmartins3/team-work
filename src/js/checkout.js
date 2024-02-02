@@ -8,8 +8,11 @@ theCheckout.init();
 
 document.querySelector("#zipcode").addEventListener("blur",theCheckout.calculateOrder.bind(theCheckout));
 
-const sub=document.getElementById("submit");
-sub.addEventListener("submit",function(event){
-    event.preventDefault();
-    theCheckout.checkout();
+document.querySelector("#submit").addEventListener("click",(e)=>{
+    e.preventDefault();
+    const theForm=document.forms[0];
+    const chk_status=theForm.checkValidity();
+    theForm.reportValidity();
+    if(chk_status)
+       theCheckout.checkout();
 })

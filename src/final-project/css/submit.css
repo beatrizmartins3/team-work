@@ -14,6 +14,7 @@ body{
     height: 75px;
     animation:myanima 3s infinite alternate;
     border: 2px solid #fff;
+    font-family: "Protest Riot", sans-serif;
 }
 
 @keyframes myanima{
@@ -36,7 +37,7 @@ body{
         align-items: center;
         justify-content: center;
         height: 100vh;
-        margin: 2px;
+        margin: 0;
         background-color: #000;
     }
     .box{
@@ -47,6 +48,7 @@ body{
         height: 75px;
         animation:myanima 3s infinite alternate;
         border: 2px solid #fff;
+        font-family: "Montserrat", sans-serif;
     }
     @keyframes myanima{
         0%{
@@ -54,11 +56,11 @@ body{
             background-color: #fff;
         }
         50%{
-            transform: translateX(100px) translateY(-90px);
+            transform: translateX(10px) translateY(-90px);
             background-color: #ffd700;
         }
         100%{
-            transform: translateX(-200px) translateY(-200px);
+            transform: translateX(-100px) translateY(-100px);
             background-color: #23238E;
         }
     }

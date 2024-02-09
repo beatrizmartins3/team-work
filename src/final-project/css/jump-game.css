@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     background-color: #f28241;
 }
@@ -10,16 +11,19 @@ header{
     background-color: #0f9bc7;
     text-align: center;
     color: #ffff00;
+    font-family: "Protest Riot", sans-serif;
 }
 footer{
     text-align: center;
     background-color: #00008b;
     padding: 5px;
     color: #fff;
+    font-family: "Protest Riot", sans-serif;
 }
 form{
     text-align: center;
     background-color:#f28241 ;
+    font-family: "Montserrat", sans-serif;
 }
 .game-board{
     width: 100%;
@@ -84,4 +88,11 @@ form{
     to{
         right: 100%;
     }
+}
+@media screen and (max-width:685px){
+    form{
+        text-align: center;
+        background-color:#edd2cb ;
+    }
+
 }

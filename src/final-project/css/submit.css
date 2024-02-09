@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 2px;
+    background-color: #000;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 75px;
+    animation:myanima 3s infinite alternate;
+    border: 2px solid #fff;
+}
+
+@keyframes myanima{
+    0%{
+        transform: translateY(200px);
+        background-color: #ff6961;
+    }
+    50%{
+        transform: translateX(200px) translateY(-90px);
+        background-color: #c8a2c8;
+    }
+    100%{
+        transform: translateX(-200px) translateY(-200px);
+        background-color: #84b6f4;
+    }
+}

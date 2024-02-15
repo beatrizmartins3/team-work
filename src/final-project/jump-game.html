@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/jump-game.css" rel="stylesheet">
-    <script src="js/jump-game.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Protest+Riot&display=swap" rel="stylesheet">
@@ -17,7 +16,7 @@
     <main>
         <div class="game-board">
             <img src="images/clouds.png" alt="clouds" class="clouds">
-            <img src="images/guy-walking.webp" alt="guy walking" class="guy-walking">
+            <img src="images/guy-walking.webp" alt="guy walking" class="mario">
             <img src="images/pipe.jpg" alt="pipe" class="pipe">
         </div>
     </main>
@@ -31,5 +30,35 @@
     </form>
     <br> 
     <footer>By B.M | Thank you for play | Come back soon</footer>
+
+    <script>
+        const mario=document.querySelector('.mario');
+        const pipe=document.querySelector('.pipe');
+        const jump=()=>{
+            mario.classList.add('jump');
+            setTimeout(()=>{
+                mario.classList.remove('jump');
+            },500);
+        }
+
+        const loop= setInterval(()=>{
+            const pipePosition=pipe.offsetLeft;
+            const marioPosition= +window.getComputedStyle(mario).bottom.replace('px', ' ');
+            console.log(marioPosition);
+    
+        if(pipePosition <= 120 && pipePosition > 0 && marioPosition < 80){
+            pipe.style.animation='none';
+            pipe.style.left=`${pipePosition}px`;
+
+            mario.style.animation='none';
+            mario.style.left=`${marioPosition}px`;
+            
+
+            clearInterval(loop);
+        }
+    },10);
+    document.addEventListener('keydown',jump)
+    document.addEventListener('touchstart', jump);
+    </script>
 </body>
 </html>

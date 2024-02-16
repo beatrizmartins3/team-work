@@ -84,29 +84,42 @@ form{
     }
 }
 
-@keyframes guy-mobile{
-    0%{
+@keyframes guy-mobile {
+    0% {
         bottom: 0;
     }
-    40%{
+    10% {
         bottom: 140px;
     }
-    50%{
+    20% {
+        bottom: 0;
+    }
+    30% {
         bottom: 140px;
     }
-    60%{
+    40% {
+        bottom: 0;
+    }
+    50% {
         bottom: 140px;
     }
-    70%{
+    60% {
+        bottom: 0;
+    }
+    70% {
         bottom: 140px;
     }
-    80%{
+    80% {
+        bottom: 0;
+    }
+    90% {
         bottom: 140px;
     }
-    100%{
+    100% {
         bottom: 0;
     }
 }
+
 
 @keyframes cloud-animation{
     from{

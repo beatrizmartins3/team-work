@@ -49,7 +49,7 @@ form{
     animation: guy 500ms ease-out;
 }
 .jump-mobile{
-    animation: guy-mobile 500ms ease-out;
+    animation: guy-mobile 2s ease-out;
 }
 .clouds{
     position: absolute;

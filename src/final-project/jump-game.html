@@ -41,6 +41,13 @@
             },500);
         }
 
+        const jumpMobile=()=>{
+            mario.classList.add('jump-mobile');
+            setTimeout(()=>{
+                mario.classList.remove('jump-mobile');
+            },500);
+        }
+
         const loop= setInterval(()=>{
             const pipePosition=pipe.offsetLeft;
             const marioPosition= +window.getComputedStyle(mario).bottom.replace('px', ' ');
